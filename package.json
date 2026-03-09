@@ -1,0 +1,27 @@
+{
+  "name": "poidh-bounty-bot",
+  "version": "1.0.0",
+  "description": "Autonomous AI bot that creates, monitors, evaluates, and pays POIDH bounties end-to-end without human intervention.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "reset": "node -e \"require('./src/utils').resetState()\"",
+    "check-balance": "node -e \"require('./src/wallet').getBalance().then(b => console.log('Balance:', b, 'ETH'))\"",
+    "lint": "eslint src/"
+  },
+  "keywords": ["poidh", "bounty", "autonomous", "ai", "ethereum", "arbitrum"],
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "twitter-api-v2": "^1.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.15.0"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  }
+}
