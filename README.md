@@ -350,8 +350,4 @@ Create `.github/workflows/run-bot.yml` with a `schedule` trigger to run the bot 
 - ✅ Fully open-source and reproducible from this repository
 - ✅ Clean README with setup, architecture, autonomy explanation, assumptions, limitations
 
----
 
-## License
-
-MIT — use, fork, and build on this freely.
